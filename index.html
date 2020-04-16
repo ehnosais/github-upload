@@ -380,3 +380,31 @@
   </footer>
 </body>
 </html>
+
+
+<section class="modal modal-write-us">
+  <h2 class="visually-hidden">Модальное окно для отправки письма</h2>
+  <form action="#" method="POST">
+    <p class="write-us-item-name">
+      <label for="write-us-name">Ваше имя:</label>
+      <input type="text" id="write-us-name" name="consumer-name" placeholder="Представьтесь, пожалуйста">
+    </p>
+    <p class="write-us-item-email">
+      <label for="write-us-email">Ваш e-mail:</label>
+      <input type="email" id="write-us-email" name="consumer-email" placeholder="Для отправки ответа">
+    </p>
+    <p class="write-us-item-text">
+      <label for="write-us-text">Текст письма:</label>
+      <textarea id="write-us-text" name="consumer-text" placeholder="В свободной форме"></textarea>
+    </p>
+    <button class="button button-write-us-send">Отправить</button>
+  </form>
+  <button class="button-modal-close"><span class="visually-hidden">Закрыть</span></button>
+</section>
+
+<section class="modal modal-map">
+  <h2 class="visually-hidden">Карта</h2>
+  <img src="img/modal-map.png" width="" height="" alt="Адрес офиса: Б.Конюшенная 19/2">
+  <button class="button-modal-close"><span class="visually-hidden">Закрыть</span></button>
+</section>
+
