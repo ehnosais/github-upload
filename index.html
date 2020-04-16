@@ -3,57 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/outline.cs">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="top-header-bar">
-      <div class="header-main-logo">
-        <a href="#">
-         Техномарт 
-        </a>
+      <div class="wrapper-top-header-bar container">
+        <div class="header-main-logo">
+          <a href="#">
+           Техномарт 
+          </a>
+        </div>
+        <ul class="header-list">
+          <li>
+            <a class="search" href="#">
+              Поиск:
+            </a>
+          </li>
+          <li>
+            <a class="bookmark" href="#">
+              Закладки: 0
+            </a>
+          </li>
+          <li>
+            <a class="basket" href="#">
+              Корзина: 0
+            </a>
+          </li>
+        </ul>
+        <ul class="user-list">
+          <li class="user-item">
+            <a class="button button-order" href="#">
+              Оформить заказ
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="header-list">
-        <li>
-          <a href="#">
-            Поиск:
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Закладки:
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Корзина:
-          </a>
-        </li>
-      </ul>
-      <ul class="user-list">
-        <li class="user-item">
-          <a class="button button-order" href="">
-            Оформить заказ
-          </a>
-        </li>
-      </ul>
     </div>
-
-    <div class="middle-header-bar">
+    <div class="middle-header-bar container">
       <p class="header-site-description">
         Интернет-магазин
         строительных материалов
         и инструментов для ремонта
       </p>
       <p class="header-site-contacts">
-        <span>+7 (800) 555-35-35</span>
-        <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        <span class="header-number">+7 (800) 555-35-35</span>
+        <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
       <p class="header-authorization">
-        <a href="#">Войти</a>
-        <a href="#">Регистрация</a>
+        <a class="button-authorization sign-in" href="#">Войти</a>
+        <a class="button-authorization sign-up" href="#">Регистрация</a>
       </p>
     </div>
-    <div class="bottom-header-bar">
+    <div class="bottom-header-bar container">
       <nav class="main-navigation">
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
