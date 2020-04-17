@@ -10,13 +10,12 @@ body {
   /*font-family: "PT Sans", "Arial Black", sans-serif;*/
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .container {
@@ -57,6 +56,7 @@ a {
 .header-main-logo a {
   display: inline-block;
   padding: 10px 55px;
+  padding-bottom: 9px;
 
   font-size: 24px;
   line-height: 24px;
@@ -218,3 +218,238 @@ a {
 .header-list {
   display: flex;
 }
+
+      /*button*/
+.button {
+  display: inline-block;
+  padding: 10px 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}      
+
+            /*main*/
+.featuers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.featuers-list .featuers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 300px;
+  padding-top: 23px;
+  padding-left: 23px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.button-featuers {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 15px;
+}
+
+.featuers-item.material {
+  
+  background-color: #ffbf47;
+}
+
+.featuers-item.tool {
+  
+  background-color: #3bbce3;
+}
+
+.featuers-item.transport {
+  
+  background-color: #dc91d8;
+}
+
+.featuers-item.sale {
+  
+  background-color: #8ed78f;
+}
+
+.featuers-item.delivery {
+  
+  background-color: #ffc047;
+}
+
+      /*слайдер*/
+.header-slider { /*временно для сетки*/
+  
+  width: 620px;
+  height: 266px;
+}
+
+.popular-products h2 {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 30px;
+  padding-right: 24px;
+  margin-bottom: 20px;
+
+  background-color: #f9f5f0;
+}
+
+.button-pop-products {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.popular-products-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 21px;
+
+  list-style: none;
+}
+
+.popular-products-item {
+  width: 220px;
+}
+
+.poplar-producers h2 {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.button-pop-producers {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.poplar-producers-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 85px;
+
+  list-style: none;
+}
+
+.poplar-producers-item {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.poplar-producers-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.information-block h3 {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.company-information p {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.company-information p:last-child {
+  margin-bottom: 21px;
+}
+
+.transport-company-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 20px;
+
+  list-style: none;
+}
+
+.transport-company-item {
+  margin-bottom: 24px;
+}
+
+.transport-company-item:last-child {
+  margin-bottom: 36px;
+}
+
+.button-company-information {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.company-contacts p {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.company-contacts img {
+  margin-bottom: 40px;
+}
+
+.button-company-contacts {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.information-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-information {
+  width: 525px;
+}
+
+.company-contacts {
+  width: 305px;
+}
+
+.information-block {
+  margin-bottom: 86px;
+}
+
+
+
+
+
+
