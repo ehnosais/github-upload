@@ -100,9 +100,9 @@
       </nav>
     </div>
   </header>
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Главная страница интернет-магазина Техномарт</h1>
-    <section class="featuers">
+    <section class="featuers container">
       <h2 class="visually-hidden">Список функций</h2>
       <ul class="featuers-list">
         <li class="featuers-item material">
@@ -145,7 +145,7 @@
       </div>  
 
     </section>
-    <section class="popular-products">
+    <section class="popular-products container">
       <div class="title-wrapper">
         <h2>Популярные товары:</h2>
         <a class="button button-pop-products" href="#">Все популярные товары</a>   
@@ -176,7 +176,7 @@
         </li>
       </ul>
     </section>
-    <section  class="poplar-producers">
+    <section  class="poplar-producers container">
       <div class="title-wrapper">
         <h2>Популярные производители:</h2>
         <a class="button button-pop-producers" href="#">Все производители</a>
@@ -226,52 +226,58 @@
     </section>
 
     <section class="main-slider">
-      <h2>Сервисы</h2>
-      <p>
-        Хороший интернет-магазин отличается от плохого не только ценами!
+      <div class="container">
+        <h2 class="title">Сервисы</h2>
+      <p class="slider-slogan">
+        Хороший интернет-магазин отличается от плохого не только ценами! <br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <ul class="main-slider-list">
-        <li class="main-slider-item">
-          Доставка
-        </li>
-        <li class="main-slider-item">
-          Гарантия
-        </li>
-        <li class="main-slider-item">
-          Кредит
-        </li>
-      </ul>
-      <div class="main-slider-1">
-        <h3>Доставка</h3>
-        <p>
-          Мы с удовольствием доставим ваш товар прямо 
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем, 
-          поднимая его на ваш этаж!
-        </p>
+      <div class="wrapper-main-slider">
+        <ul class="main-slider-list">
+          <li class="main-slider-item current">
+            Доставка
+          </li>
+          <li class="main-slider-item">
+            Гарантия
+          </li>
+          <li class="main-slider-item">
+            Кредит
+          </li>
+        </ul>
+        <div class="slider-pack">
+          <div class="slider-pack-item main-slider-1">
+            <h3>Доставка</h3>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо <br>
+              к вашему подъезду совершенно бесплатно! <br>
+              Ведь мы неплохо заработаем, <br>
+              поднимая его на ваш этаж!
+            </p>
+          </div>
+          <div class="slider-pack-item main-slider-2">
+            <h3>Гарантия</h3>
+            <p>
+              Если купленный у нас товар поломается или заискрит, <br>
+              а также в случае пожара, спровоцированного его возгаранием, <br>
+                вы всегда можете быть уверены в нашей гарантии.
+                Мы обменяем <br> сгоревший товар на новый. <br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+          <div class="slider-pack-item main-slider-3">
+            <h3>Кредит</h3>
+            <p>
+              Залезть в долговую яму стало проще! <br>
+              Кредитные консультанты придут вам на помощь.  
+            </p>
+            <a class="button button-credit" href="#">Оставить заявку</a>
+          </div>
+        </div>
       </div>
-      <div class="main-slider-2">
-        <h3>Гарантия</h3>
-        <p>
-          Если купленный у нас товар поломается или заискрит, 
-          а также в случае пожара, спровоцированного его возгаранием,
-            вы всегда можете быть уверены в нашей гарантии. 
-            Мы обменяем сгоревший товар на новый. 
-          Дом уж восстановите как-нибудь сами.
-        </p>
-      </div>
-      <div class="main-slider-3">
-        <h3>Кредит</h3>
-        <p>
-          Залезть в долговую яму стало проще! 
-          Кредитные консультанты придут вам на помощь.  
-        </p>
-        <a class="button button-credit" href="#">Оставить заявку</a>
       </div>
     </section>
 
-    <section class="information-block">
+    <section class="information-block container">
       <h2 class="visually-hidden">Информационный блок</h2>
       <div class="company-information">
         <h3>Компания Техномарт</h3>
