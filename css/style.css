@@ -260,6 +260,8 @@ a {
 }
 
 .featuers-item {
+  width: 300px;
+  height: 123px;
   position: relative;
 }
 
@@ -346,6 +348,7 @@ a {
       /*слайдер*/
 .header-slider { /*временно для сетки*/
   width: 620px;
+  height: 266px;
 
   background-color: #000000;
 }
@@ -954,6 +957,51 @@ h3 ~ .popular-products-old-price {
   width: 105px;
   margin-right: auto;
 }
+
+/* сетка на float*/
+
+.featuers-item.material {
+  margin-right: 20px;
+  float: left;
+}
+
+.featuers-item.tool {
+  margin-right: 20px;
+  float: left;
+}
+
+.featuers-item.transport {
+  float: left;
+}
+
+.header-slider {
+  float: left;
+}
+
+.featuers-item.sale {
+  float: right;
+}
+
+.featuers-item.delivery {
+  float: right;
+}
+
+.featuers-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.featuers-list {
+  margin-bottom: 53px;
+}
+
+.featuers-list div {
+  margin-bottom: 20px;
+}
+
+
+
 
 
 
