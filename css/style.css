@@ -1252,3 +1252,127 @@ h3 ~ .popular-products-old-price {
   border-radius: 3px;
   background-color: #ffffff;
 }
+
+.product-sort {
+  display: flex;
+  padding: 11px 18px;
+  margin-bottom: 20px;
+}
+
+.product-sort {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.product-sort-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+
+  list-style: none;
+}
+
+.product-sort span {
+  margin-right: 140px;
+}
+
+.product-sort-item:first-child a {
+  margin-right: 70px;
+}
+
+.product-sort-item:nth-child(2) a {
+  margin-right: 65px;
+}
+
+.inner-page-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.product-catalog-column {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.product-catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-catalog-list .popular-products-item {
+  margin-bottom: 20px;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.page-button {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-right: 10px;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.pagination-item:last-child .page-button {
+  margin-right: 0;
+}
+
+.page-button-current {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.page-button-next {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.product-item-description {
+  padding: 67px 0;
+}
+
+.product-item-description h2 {
+  margin: 0;
+  margin-bottom: 33px;
+
+  font-family: "Cuprum", "Arial", sans-serif;;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.product-item-description p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.bottom-description-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+
+  background-color: #f2f6f8;
+}
