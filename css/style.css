@@ -2,13 +2,12 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-
+  
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   color: #000000;
 
   background-color: #ffffff;
-  
 }
 
 a {
@@ -33,6 +32,8 @@ a {
 
   background-color: #f3f7f9;
 }
+
+
 
 .top-header-bar {
   margin-bottom: 46px;
@@ -259,6 +260,8 @@ a {
 }
 
 .featuers-item {
+  width: 300px;
+  height: 123px;
   position: relative;
 }
 
@@ -345,6 +348,7 @@ a {
       /*слайдер*/
 .header-slider { /*временно для сетки*/
   width: 620px;
+  height: 266px;
 
   background-color: #000000;
 }
@@ -952,6 +956,54 @@ h3 ~ .popular-products-old-price {
   width: 105px;
   margin-right: auto;
 }
+
+/* сетка на float*/
+
+.featuers-item.material {
+  margin-right: 20px;
+  float: left;
+}
+
+.featuers-item.tool {
+  float: left;
+}
+
+.featuers-item.transport {
+  float: right;
+}
+
+.header-slider {
+  float: left;
+}
+
+.featuers-item.sale {
+  float: right;
+}
+
+.featuers-item.delivery {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.featuers-list {
+  padding-bottom: 53px;
+}
+
+.featuers-list .featuers-item  {
+  margin-bottom: 20px;
+}
+
+.featuers-list .featuers-item:last-child  {
+  margin-bottom: 0;
+}
+
+
+
 
 
 
