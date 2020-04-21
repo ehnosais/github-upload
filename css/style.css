@@ -247,8 +247,8 @@ a {
 
   width: 300px;
   padding-top: 23px;
- /* padding-left: 23px;
-  padding-bottom: 22px;*/
+  padding-left: 23px;
+  padding-bottom: 22px;
   box-sizing: border-box;
 
   font-size: 24px;
@@ -966,12 +966,11 @@ h3 ~ .popular-products-old-price {
 }
 
 .featuers-item.tool {
-  margin-right: 20px;
   float: left;
 }
 
 .featuers-item.transport {
-  float: left;
+  float: right;
 }
 
 .header-slider {
@@ -986,18 +985,22 @@ h3 ~ .popular-products-old-price {
   float: right;
 }
 
-.featuers-list::after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
 .featuers-list {
-  margin-bottom: 53px;
+  padding-bottom: 53px;
 }
 
-.featuers-list div {
+.featuers-list .featuers-item  {
   margin-bottom: 20px;
+}
+
+.featuers-list .featuers-item:last-child  {
+  margin-bottom: 0;
 }
 
 
