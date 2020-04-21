@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -7,7 +8,7 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-  /*font-family: "PT Sans", "Arial Black", sans-serif;*/
+  
 }
 
 a {
@@ -28,14 +29,12 @@ a {
 .main-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 59px;
 
   background-color: #f3f7f9;
 }
 
 .top-header-bar {
-  width: 100%;
   margin-bottom: 46px;
   color: #ffffff;
 
@@ -760,7 +759,6 @@ h3 ~ .popular-products-old-price {
             /*footer*/
 
 .footer-main-menu {
-  width: 100%;
   padding-bottom: 50px;
 
   font-size: 18px;
