@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   color: #000000;
 
- 
+  background-color: #ffffff;
 }
 
 a {
@@ -32,8 +32,6 @@ a {
 
   background-color: #f3f7f9;
 }
-
-
 
 .top-header-bar {
   margin-bottom: 46px;
@@ -386,7 +384,7 @@ a {
 .header-slider p {
   margin: 0;
 
-  font-family: "PT Sans", "Arial Black", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -433,7 +431,7 @@ a {
   padding: 0;
   margin-bottom: 21px;
 
-  font-family: "PT Sans", "Arial Black", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   list-style: none;
 }
@@ -1002,8 +1000,255 @@ h3 ~ .popular-products-old-price {
   margin-bottom: 0;
 }
 
+            /*inner-page*/
+      /*main*/
+.inner-page main {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
 
+.inner-page .main-header {
+  margin-bottom: 22px;
+}
 
+.breadcrumbs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 22px;
 
+  list-style: none;
+}
 
+.breadcrumbs-item a {
+  margin-right: 38px;
 
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.breadcrumbs-item a {
+  position: relative;
+}
+
+.breadcrumbs-item .homepage-element {
+  margin-right: 50px;
+}
+
+.homepage-element::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 14px;
+  height: 12px;
+
+  background-image: url("../img/icon-home.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  transform: translateY(-50%);
+}
+
+.breadcrumbs-item:not(:last-child) a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -23px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/arrow-rigth.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  transform: translateY(-50%);
+}
+
+.homepage-element::after {
+  right: -35px !important;
+}
+
+.inner-page .page-title {
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+
+  font-family: "Cuprum", "Arial", sans-serif;;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+
+.catalog-filter h3 {
+  margin: 0;
+  padding: 10px 18px;
+  margin-bottom: 13px;
+
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+  border-radius: 5px;
+}
+
+.catalog-filter {
+  width: 225px;
+}
+
+.catalog-filter .catalog-filter-item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.catalog-filter-item  legend {
+  padding: 0;
+  margin-bottom: 16px;
+
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;  
+  text-transform: uppercase;
+}
+
+.catalog-filter-producer-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-filter-producer-item label {
+  position: relative;
+  display: inline-block;
+  padding-left: 35px;
+  margin-bottom: 26px;
+
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-producer-item:last-child label {
+  margin-bottom: 0;
+}
+
+.catalog-filter-producer-item label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image:  url("../img/checkbox-off.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  transform: translate(0, -50%);
+}
+
+.catalog-filter-producer-item input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image:  url("../img/checkbox-on.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  transform: translate(0, -50%);
+}
+
+.catalog-filter-item.producer{
+  padding-bottom: 21px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-filter-supply-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-filter-supply-item label {
+  position: relative;
+  display: inline-block;
+  padding-left: 36px;
+
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-supply-item label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  transform: translateY(-50%);
+}
+
+.catalog-filter-supply-item input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  transform: translateY(-50%);
+}
+
+.catalog-filter-supply-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.catalog-filter-item.supply {
+  margin-bottom: 75px;
+}
+
+.button-filter {
+  padding: 11px 38px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
