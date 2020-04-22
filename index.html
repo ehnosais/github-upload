@@ -26,11 +26,28 @@
           <li>
             <a class="bookmark" href="#">
               Закладки: 0
+              <span>
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	              width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+                <path fill="#E72C2D" d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+	              C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
+                </svg>
+              </span>
             </a>
           </li>
           <li>
             <a class="basket" href="#">
               Корзина: 0
+              <span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	              width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+	              <circle cx="4.5" cy="13.5" r="1.5"/>
+	              <circle cx="12.5" cy="13.5" r="1.5"/>
+	              <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+                </g>
+                </svg>
+              </span>
             </a>
           </li>
         </ul>
@@ -54,8 +71,22 @@
         <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
       <p class="header-authorization">
-        <a class="button-authorization sign-in" href="#">Войти</a>
-        <a class="button-authorization sign-up" href="#">Регистрация</a>
+        <a class="button-authorization sign-in" href="#">
+          <span class="authorization-text">Войти</span> 
+          <span class="sign-in-icon">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	          width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+            <g>
+	          <polygon fill="#32425C" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
+            </g>
+            <path fill="#32425C" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+	          v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+            </svg>
+          </span>
+        </a>
+        <a class="button-authorization sign-up" href="#">
+          <span class="authorization-text">Регистрация</span>  
+        </a>
       </p>
     </div>
     <div class="bottom-header-bar container">
@@ -63,37 +94,37 @@
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
             <a href="index.html">
-              Главная
+              <span>Главная</span> 
             </a>
           </li>
           <li class="main-navigation-item">
             <a href="company.html">
-              Компания
+              <span>Компания</span>  
             </a>
           </li>
           <li class="main-navigation-item">
             <a href="catalog.html">
-              Каталог
+              <span>Каталог</span>  
             </a>
           </li>
           <li class="main-navigation-item">
             <a href="news.html">
-              Новости
+              <span>Новости</span>  
             </a>
           </li>
           <li class="main-navigation-item">
             <a href="special-offers.html">
-              Спецпредложения
+              <span>Спецпредложения</span>  
             </a>
           </li>
           <li class="main-navigation-item">
             <a href="delivery.html">
-              Доставка
+              <span>Доставка</span>  
             </a>
           </li>
           <li class="main-navigation-item">
             <a href="contacts.html">
-              Контакты
+              <span>Контакты</span>  
             </a>
           </li>
         </ul>
@@ -107,7 +138,7 @@
       <div class="featuers-list clearfix">
         <div class="featuers-item material">
            Материалы
-          <a class="button button-featuers" href="#">На любой вкус</a>
+          <a class="button button-featuers" href="#"><span>На любой вкус</span></a>
         </div>
         <div class="featuers-item tool">
           Инструмент
@@ -123,7 +154,7 @@
             <p>
               Настоящие мужские игрушки
             </p>
-            <a class="button button-header-slider" href="#">Открыть каталог</a>
+            <a class="button button-header-slider" href="catalog.html">Открыть каталог</a>
           </div>
           <div class="header-slider-2">
             <h3>Дрели</h3>
@@ -150,27 +181,95 @@
       </div>
       <ul class="popular-products-list">
         <li class="popular-products-item">
-          <h3>Перфоратор <span>Bosch BFG 9000</span></h3>
+          <h3> Перфоратор <span>Bosch BFG 9000</span></h3>
           <img src="img/bosch-bfg-9000.png" width="187" height="164" alt="Перфоратор Bosch BFG 9000">
           <span class="popular-products-old-price">32500 р.</span>
           <span class="popular-products-price">25500 р.</span>
+          <span class="flag">Новинка</span>
+          <div class="actions">
+            <a class="buy" href="#">
+              Купить
+              <span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	              width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+	              <circle cx="4.5" cy="13.5" r="1.5"/>
+	              <circle cx="12.5" cy="13.5" r="1.5"/>
+	              <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+                </g>
+                </svg>
+              </span>
+            </a>
+            <a class="bookmark-product" href="#">В закладки</a>
+          </div>
         </li>
         <li class="popular-products-item">
           <h3>Перфоратор <span>Bosch BFG 3000</span></h3>
           <img src="img/bosch-bfg-3000.png" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
           <span class="popular-products-old-price">22500 р.</span>
           <span class="popular-products-price">15500 р.</span>
+          <span class="flag">Новинка</span>
+          <div class="actions">
+            <a class="buy" href="#">
+              Купить
+              <span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	              width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+	              <circle cx="4.5" cy="13.5" r="1.5"/>
+	              <circle cx="12.5" cy="13.5" r="1.5"/>
+	              <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+                </g>
+                </svg>
+              </span>
+            </a>
+            <a class="bookmark-product" href="#">В закладки</a>
+          </div>
         </li>
         <li class="popular-products-item">
           <h3>Перфоратор <span>Bosch BFG 6000</span></h3>
           <img src="img/bosch-bfg-6000.png" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
           <span class="popular-products-old-price">30500 р.</span>
           <span class="popular-products-price">25500 р.</span>
+          <span class="flag">Новинка</span>
+          <div class="actions">
+            <a class="buy" href="#">
+              Купить
+              <span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	              width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+	              <circle cx="4.5" cy="13.5" r="1.5"/>
+	              <circle cx="12.5" cy="13.5" r="1.5"/>
+	              <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+                </g>
+                </svg>
+              </span>
+            </a>
+            <a class="bookmark-product" href="#">В закладки</a>
+          </div>
         </li>
         <li class="popular-products-item">
           <h3>Перфоратор <span>Bosch BFG 2000</span></h3>
           <img src="img/bosch-bfg-2000.png" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
           <span class="popular-products-price">12500 р.</span>
+          <span class="flag flag-new">Новинка</span>
+          <div class="actions">
+            <a class="buy" href="#">
+              Купить
+              <span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	              width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+	              <circle cx="4.5" cy="13.5" r="1.5"/>
+	              <circle cx="12.5" cy="13.5" r="1.5"/>
+	              <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+                </g>
+                </svg>
+              </span>
+            </a>
+            <a class="bookmark-product" href="#">В закладки</a>
+          </div>
         </li>
       </ul>
     </section>
