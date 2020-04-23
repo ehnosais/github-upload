@@ -90,19 +90,69 @@ a {
   line-height: 18px;
 }
 
-.header-list a:hover,
-.header-list a:focus {
-  background-color: #212a3a;
-}
-
 .header-list li:not(:first-child) a:active {
   background-color: #161d29;
   opacity: 0.6;
 }
 
-.header-list .search {
-  padding-left: 49px;
-  padding-right: 180px;
+.search-form-item input[type="search"]{
+  padding: 0;
+  padding-left: 50px;
+
+  box-sizing: border-box;
+  width: 265px;
+  height: 44px;
+
+  color: #ffffff;
+  font: inherit;
+  font-size: 17px;
+  line-height: 18px;
+
+  border: none;
+  background-color: #293449;
+}
+
+.header-list a:hover,
+.header-list a:focus,
+.header-list input[type="search"]:hover {
+  background-color: #212a3a;
+}
+
+.header-list input[type="search"]:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.search-form-item {
+  position: relative;
+  margin: 0;
+}
+
+.search-form-item svg {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  transform: translateY(-50%);
+}
+
+.search-form-item path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.search-form-item:hover path {
+  fill: rgba(255, 255, 255, 1);
+}
+
+input[type="search"]:focus ~ svg path{
+  fill: #ee3643;
+}
+
+input[type="search"]::placeholder {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
 }
 
 
