@@ -173,30 +173,142 @@
           <h3>Фильтр:</h3>
           <fieldset class="catalog-filter-item price"> 
             <legend>Цена:</legend>
-            <!--Сложный фильтр-->
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <span></span>
+                <label class="max-price">
+                  <input type="text" name="max-price" value="30000">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="catalog-filter-item producer">
             <legend>Производители:</legend>
             <ul class="catalog-filter-producer-list">
               <li class="catalog-filter-producer-item">
-                <input class="visually-hidden" type="checkbox" name="Bosch" id="Bosch" checked>
-                <label for="Bosch">Bosch</label>
+                <label for="Bosch">
+                  <input class="visually-hidden" type="checkbox" name="Bosch" id="Bosch" checked disabled>
+                  <svg class="checkbox-icon checkbox-off" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+                    <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+	                  C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+                  </svg>
+                  <svg class="checkbox-icon checkbox-on"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+	                  height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                    <g id="Layer_1">
+                    </g>
+                    <g id="Layer_2">
+	                    <g>
+		                    <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+		                    <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+			                  H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+	                    </g>
+                    </g>
+                  </svg>
+                 <span>Bosch</span> 
+              </label>
               </li>
               <li class="catalog-filter-producer-item">
-                <input class="visually-hidden" type="checkbox" name="Interskol" id="Interskol">
-                <label for="Interskol">Интерскол</label>
+                <label for="Interskol">
+                  <input class="visually-hidden" type="checkbox" name="Interskol" id="Interskol">
+                  <svg class="checkbox-icon checkbox-off" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+                    <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+	                  C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+                  </svg>
+                  <svg class="checkbox-icon checkbox-on"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+	                  height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                    <g id="Layer_1">
+                    </g>
+                    <g id="Layer_2">
+	                    <g>
+		                    <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+		                    <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+			                  H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+	                    </g>
+                    </g>
+                  </svg>
+                  <span>Интерскол</span>  
+                </label>
               </li>
               <li class="catalog-filter-producer-item">
-                <input class="visually-hidden" type="checkbox" name="Makita" id="Makita" checked>
-                <label for="Makita">Makita</label>
+                <label for="Makita">
+                  <input class="visually-hidden" type="checkbox" name="Makita" id="Makita" checked>
+                  <svg class="checkbox-icon checkbox-off" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+                    <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+	                  C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+                  </svg>
+                  <svg class="checkbox-icon checkbox-on"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+	                  height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                    <g id="Layer_1">
+                    </g>
+                    <g id="Layer_2">
+	                    <g>
+		                    <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+		                    <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+			                  H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+	                    </g>
+                    </g>
+                  </svg>
+                  <span>Makita</span>  
+                </label>
               </li>
               <li class="catalog-filter-producer-item">
-                <input class="visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
-                <label for="Dewalt">Dewalt</label>
+                <label for="Dewalt">
+                  <input class="visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
+                  <svg class="checkbox-icon checkbox-off" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+                    <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+	                  C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+                  </svg>
+                  <svg class="checkbox-icon checkbox-on"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+	                  height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                    <g id="Layer_1">
+                    </g>
+                    <g id="Layer_2">
+	                    <g>
+		                    <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+		                    <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+			                  H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+	                    </g>
+                    </g>
+                  </svg>
+                  <span>Dewalt</span>  
+                </label>
               </li>
               <li class="catalog-filter-producer-item">
-                <input class="visually-hidden" type="checkbox" name="Hitachi" id="Hitachi">
-                <label for="Hitachi">Hitachi</label>
+                <label for="Hitachi">
+                  <input class="visually-hidden" type="checkbox" name="Hitachi" id="Hitachi">
+                  <svg class="checkbox-icon checkbox-off" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="23px" height="23px" viewBox="0 0 23 23" enable-background="new 0 0 23 23" xml:space="preserve">
+                    <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
+	                  C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z"/>
+                  </svg>
+                  <svg class="checkbox-icon checkbox-on"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+	                  height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+                    <g id="Layer_1">
+                    </g>
+                    <g id="Layer_2">
+	                    <g>
+		                    <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+		                    <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+			                  H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+	                    </g>
+                    </g>
+                  </svg>
+                  <span>Hitachi</span>  
+                </label>
               </li>
             </ul>
           </fieldset>
