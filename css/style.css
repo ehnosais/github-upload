@@ -1534,6 +1534,7 @@ h3 ~ .popular-products-old-price {
   margin-bottom: 0;
 }
 
+
 .catalog-filter-producer-item label::before {
   content: "";
   position: absolute;
@@ -1589,6 +1590,41 @@ h3 ~ .popular-products-old-price {
   text-transform: uppercase;
 }
 
+.catalog-filter-supply-item .radio-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  fill: #c5c5c5;
+  transform: translateY(-50%);
+}
+
+.radio-icon.radio-checked {
+  display: none;
+}
+
+.catalog-filter-supply-item input[type="radio"]:checked ~ .radio-icon.radio-checked {
+  display: block;
+}
+
+.catalog-filter-supply-item label:hover .radio-icon {
+  fill: #b5b5b5;
+}
+
+.catalog-filter-supply-item input[type="radio"]:disabled ~ .radio-icon {
+  opacity: 0.3;
+}
+
+.catalog-filter-supply-item input[type="radio"]:disabled ~ span {
+  opacity: 0.4;
+}
+
+
+
+/*
 .catalog-filter-supply-item label::before {
   content: "";
   position: absolute;
@@ -1620,7 +1656,7 @@ h3 ~ .popular-products-old-price {
 
   transform: translateY(-50%);
 }
-
+*/
 .catalog-filter-supply-item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -1674,6 +1710,46 @@ h3 ~ .popular-products-old-price {
 
 .product-sort-item:nth-child(2) a {
   margin-right: 65px;
+}
+
+.product-sort-item a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.product-sort-list .product-sort-item a:hover,
+.product-sort-list .product-sort-item a:focus {
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid #ee3643;
+}
+
+.product-sort-item.current a {
+  color: #ee3643;
+  border: none;
+}
+
+
+
+
+.product-sort-arrow .up-direction {
+  margin-right: 20px;
+}
+
+.product-sort-arrow polygon,
+.product-sort-arrow polyline {
+  fill: #c5c5c5;
+}
+
+.product-sort-arrow a:hover polygon,
+.product-sort-arrow a:hover polyline,
+.product-sort-arrow a:focus polygon,
+.product-sort-arrow a:focus polyline {
+  fill: #000000;
+}
+
+.product-sort-arrow .current polygon,
+.product-sort-arrow .current polyline {
+  fill: #ee3643;
 }
 
 .inner-page-wrapper {
@@ -1737,6 +1813,15 @@ h3 ~ .popular-products-old-price {
 .page-button-next {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.page-button:hover,
+.page-button:focus {
+  border-color: #bdc6ca;
+}
+
+.page-button:focus {
+  border-color: #ee3643;
 }
 
 .product-item-description {
