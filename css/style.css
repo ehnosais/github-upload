@@ -1712,41 +1712,6 @@ h3 ~ .popular-products-old-price {
   opacity: 0.4;
 }
 
-
-
-/*
-.catalog-filter-supply-item label::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  width: 25px;
-  height: 25px;
-
-  background-image: url("../img/radio-off.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  transform: translateY(-50%);
-}
-
-.catalog-filter-supply-item input[type="radio"]:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-
-  width: 25px;
-  height: 25px;
-
-  background-image: url("../img/radio-on.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  transform: translateY(-50%);
-}
-*/
 .catalog-filter-supply-item:not(:last-child) {
   margin-bottom: 16px;
 }
@@ -1942,15 +1907,96 @@ h3 ~ .popular-products-old-price {
   background-color: #f2f6f8;
 }
 
+            /*modal*/
+.popup-basket .message {
+  position: relative;
+  display: inline-block;
+  padding-left: 98px;
+  margin: 68px 0;
+  margin-left: 80px;
 
+  font-size: 30px;
+  line-height: 30px;
+}
 
+.popup-basket .message::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
 
+  width: 66px;
+  height: 66px;
 
+  background-image: url("../img/basket-popup-icon.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
 
+.popup-basket .basket-button {
+  box-sizing: border-box;
+  width: 220px;
+  text-align: center;
+  border: none;
+}
 
+.popup-basket .basket-button.contune {
+  margin-left: 16px;
+  color: #000000;
+  background-color: #ffffff;
+}
 
+.popup-basket {
+  position: fixed;
+  display: none;
+  top: 410px;
+  left: 50%;
 
+  box-sizing: border-box;
+  width: 620px;
 
+  border-top: 7px solid #ee3643;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+  z-index: 100;
+}
 
+.popup-basket-buttons {
+  padding: 37px 80px;
+  background-color: #f1f1f1;
+}
 
+.popup-basket .button-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 9px;
+
+  width: 21px;
+  height: 21px;
+
+  border: none;
+  background-color: transparent;
+}
+
+.popup-basket .button-modal-close::before,
+.popup-basket .button-modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -5px;
+
+  width: 30px;
+  height: 3px;
+  
+  background-color: #ee3643;
+}
+
+.popup-basket .button-modal-close::before {
+  transform: rotate(45deg);
+}
+
+.popup-basket .button-modal-close:after {
+  transform: rotate(-45deg);
+}
 
