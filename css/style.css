@@ -1108,9 +1108,8 @@ h3 ~ .popular-products-old-price {
   margin-bottom: 66px
 }
   
-.main-slider-item {
+.main-slider-item button {
   padding: 15px 23px;
-  padding-right: 0;
   width: 240px;
   box-sizing: border-box;
 
@@ -1119,11 +1118,17 @@ h3 ~ .popular-products-old-price {
   font-weight: 700;
   color: #ffffff;
 
+  border: none;
   background-color: #32425c;
   box-shadow: inset 0 1px 0 0 #4d627b;
 }
 
-.main-slider-item.current {
+.main-slider-item button:hover,
+.main-slider-item button:focus {
+  background-color: #293449;
+}
+
+.main-slider-list .main-slider-item .current {
   color: #32425c;
   background-color: #ffffff;
   box-shadow: none;
@@ -1154,18 +1159,15 @@ h3 ~ .popular-products-old-price {
 }
 
 .slider-pack {
-  position: relative;
   width: 620px;
 }
 
 .slider-pack-item {
- position: absolute;
- top: 0;
- left: 0;
+ position: relative;
 }
 
 .main-slider-1 {
-  position: relative;
+ /* display: none;*/
 }
 
 .main-slider-2 {
@@ -1182,10 +1184,38 @@ h3 ~ .popular-products-old-price {
   top: 0;
   right: 0;
 
-  width: 206px;
-  height: 146px;
+  width: 468px;
+  height: 261px;
 
   background-image: url("../img/delivery-car.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-slider-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 389px;
+  height: 283px;
+
+  background-image: url("../img/guarantee-medal.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-slider-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 465px;
+  height: 285px;
+
+  background-image: url("../img/credit-card.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
