@@ -161,22 +161,30 @@
           Техника
           <a class="button button-featuers" href="#">Для стройки</a>
         </div>
-        <div class="header-slider"> 
-          <div class="header-slider-1">
-            <h3>Перфораторы</h3>
-            <p>
-              Настоящие мужские игрушки
-            </p>
-            <a class="button button-header-slider" href="catalog.html">Открыть каталог</a>
-          </div>
-          <div class="header-slider-2">
-            <h3>Дрели</h3>
-            <p>
-              Соседям на радость!
-            </p>
-            <a class="button button-header-slider" href="#">Открыть каталог</a>
-          </div>
+
+        <div class="header-slider">
+          <div class="slider-controls">
+            <button class="header-slider-button forward" type="button">
+              <span class="visually-hidden">Следующий</span>
+            </button>
+            <button class="header-slider-button backward" type="button">
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+          </div> 
+          <ul class="slider-list">
+            <li class="header-sliders header-slider-1 active">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a class="button button-header-slider" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="header-sliders header-slider-2 active">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a class="button button-header-slider" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
         </div>  
+
         <div class="featuers-item sale">
           Скидки 50%
           <a class="button button-featuers" href="#">На 350 товаров</a>
@@ -422,6 +430,11 @@
         <img src="img/mini-map.png" width="300" height="158" alt="Адрес офиса: Б.Конюшенная 19/2">
         <a class="button button-company-contacts" href="#">Заблудились? Напишите нам!</a>
       </div>
+      <div class="modal modal-map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="img/modal-map.jpg" width="940" height="446" alt="Адрес офиса: Б.Конюшенная 19/2">
+        <button class="button-modal-close"><span class="visually-hidden">Закрыть</span></button>
+      </div>
     </section>
   </main>
   <footer>
@@ -511,38 +524,31 @@
       </div>
     </section>
   </footer>
+
+  <section class="modal modal-write-us">
+    <h2 class="visually-hidden">Модальное окно для отправки письма</h2>
+    <form action="#" method="POST">
+      <div class="write-us-wrapper">
+        <p class="write-us-item">
+          <label for="write-us-name">Ваше имя:</label>
+          <input type="text" id="write-us-name" name="consumer-name" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input type="email" id="write-us-email" name="consumer-email" placeholder="Для отправки ответа">
+        </p>
+        <p class="write-us-item">
+          <label for="write-us-text">Текст письма:</label>
+          <textarea id="write-us-text" name="consumer-text" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <div class="button-send-wrapper">
+        <button class="button button-send">Отправить</button>
+      </div>
+    </form>
+    <button class="button-modal-close"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+
 </body>
 </html>
-
-
-<section class="modal modal-write-us">
-  <h2 class="visually-hidden">Модальное окно для отправки письма</h2>
-  <form action="#" method="POST">
-    <div class="write-us-wrapper">
-      <p class="write-us-item">
-        <label for="write-us-name">Ваше имя:</label>
-        <input type="text" id="write-us-name" name="consumer-name" placeholder="Представьтесь, пожалуйста">
-      </p>
-      <p class="write-us-item">
-        <label for="write-us-email">Ваш e-mail:</label>
-        <input type="email" id="write-us-email" name="consumer-email" placeholder="Для отправки ответа">
-      </p>
-      <p class="write-us-item">
-        <label for="write-us-text">Текст письма:</label>
-        <textarea id="write-us-text" name="consumer-text" placeholder="В свободной форме"></textarea>
-      </p>
-    </div>
-    <div class="button-send-wrapper">
-      <button class="button button-send">Отправить</button>
-    </div>
-  </form>
-  <button class="button-modal-close"><span class="visually-hidden">Закрыть</span></button>
-</section>
-
-<!--
-<section class="modal modal-map">
-  <h2 class="visually-hidden">Карта</h2>
-  <img src="img/modal-map.jpg" width="940" height="447" alt="Адрес офиса: Б.Конюшенная 19/2">
-  <button class="button-modal-close"><span class="visually-hidden">Закрыть</span></button>
-</section>
 

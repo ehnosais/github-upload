@@ -547,30 +547,100 @@ input[type="search"]::placeholder {
 
 
       /*слайдер*/
-.header-slider { /*временно для сетки*/
-  width: 620px;
-  height: 266px;
-
-  background-color: #000000;
-}
-
-.header-slider-1 {
+.header-sliders {
   position: relative;
-
   padding-top: 26px;
   padding-left: 25px;
   box-sizing: border-box;
   width: 620px;
   height: 266px;
+}
 
-  background-image: url("../img/slider1-back.jpg");
+.header-slider-1 {
+  display: none;
+  background-image: 
+    url("../img/slider-1-top.png"),
+    url("../img/slider1-back.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .header-slider-2 {
-  display: none;
-  background-image: url("../img/slider1-back.jpg");
+  /*display: none;*/
+  
+  background-image:
+    url("../img/slider-2-top.png"),
+    url("../img/slider-2-back.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.header-slider ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-slider {
+  position: relative;
+}
+
+.header-slider-button {
+  position: absolute;
+  top: 114px;
+  
+  width: 22px;
+  height: 40px;
+  
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+}
+
+.header-slider-button.forward {
+  right: 25px;
+  background-image: url("../img/slider-right.svg");
+}
+
+.header-slider-button.backward {
+  left: 25px;
+  background-image: url("../img/slider-left.svg");
+}
+
+.header-slider .slider-list {
+  position: relative;
+}
+
+
+.header-sliders::before,
+.header-sliders::after {
+  content: "";
+  position: absolute;
+  bottom: 36px;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.header-sliders::before {
+  left: 294px;
+}
+
+.header-sliders::after {
+  right: 294px;
+}
+
+.header-slider-1.active.header-sliders::before {
+  background-color: #ee3643;
+}
+
+.header-slider-2.active.header-sliders::after {
+  background-color: #ee3643;
 }
 
 .header-slider h3 {
@@ -983,6 +1053,7 @@ h3 ~ .popular-products-old-price {
 }
 
 .information-block {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
@@ -2005,7 +2076,7 @@ h3 ~ .popular-products-old-price {
   position: fixed;
   bottom: 200px;
   left: 50%;
-
+  display: none;
   width: 620px;
 
   border-top: 7px solid #ee3643;
@@ -2086,4 +2157,13 @@ h3 ~ .popular-products-old-price {
   resize: none;
 }
 
+.modal-map {
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  display: none;
+  width: 940px;
+  height: 446px;
 
+  box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
+}
