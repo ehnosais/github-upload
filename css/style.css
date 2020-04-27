@@ -28,7 +28,7 @@ a {
 .main-header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 59px;
+  margin-bottom: 53px;
 
   background-color: #f3f7f9;
 }
@@ -100,7 +100,7 @@ a {
   padding-left: 50px;
 
   box-sizing: border-box;
-  width: 265px;
+  width: 270px;
   height: 44px;
 
   color: #ffffff;
@@ -502,10 +502,31 @@ input[type="search"]::placeholder {
   background-image: url("../img/vehicle-icon.svg");
 }
 
+.featuers-item .flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 60px;
+  height: 59px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 10;
+} 
+
+.featuers-item .flag-new {
+  background-image: url("../img/new-flag.png");
+}
+
+
 .button-featuers {
   display: inline-block;
-  padding: 12px 24px;
-  margin-top: 15px;
+  padding: 12px 0;
+  margin-top: 11px;
+  box-sizing: border-box;
+  width: 135px;
+  text-align: center;
 
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -645,7 +666,6 @@ input[type="search"]::placeholder {
 
 .header-slider h3 {
   margin: 0;
-  margin-bottom: 10px;
 
   font-size: 36px;
   line-height: 36px;
@@ -745,7 +765,7 @@ input[type="search"]::placeholder {
   margin: 0;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
 
   text-align: center;
   font-size: 18px;
@@ -762,7 +782,7 @@ h3 ~ .popular-products-old-price {
 
 .popular-products-old-price {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
@@ -772,7 +792,7 @@ h3 ~ .popular-products-old-price {
 .popular-products-price {
   position: relative;
   display: inline-block;
-  padding: 12px 36px;
+  padding: 10px 36px;
 
   font-size: 17px;
   line-height: 18px;
@@ -791,7 +811,7 @@ h3 ~ .popular-products-old-price {
   width: 0;
   height: 0;
 
-  border: 21px solid #ffffff;
+  border: 19px solid #ffffff;
   border-left-color: #ee3643;
 }
 
@@ -928,7 +948,7 @@ h3 ~ .popular-products-old-price {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 85px;
+  margin-bottom: 79px;
 
   list-style: none;
 }
@@ -978,7 +998,7 @@ h3 ~ .popular-products-old-price {
 
 .information-block h3 {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   font-size: 30px;
   line-height: 30px;
@@ -991,6 +1011,8 @@ h3 ~ .popular-products-old-price {
   margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .company-information p:last-child {
@@ -1009,7 +1031,7 @@ h3 ~ .popular-products-old-price {
 
 .transport-company-item {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   padding-left: 36px;
 }
 
@@ -1056,7 +1078,7 @@ h3 ~ .popular-products-old-price {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-bottom: 83px;
 }
 
 .company-information {
@@ -1067,14 +1089,11 @@ h3 ~ .popular-products-old-price {
   width: 305px;
 }
 
-.information-block {
-  margin-bottom: 86px;
-}
-
       /*slider*/
 .main-slider {
   width: 1200px;
   margin: 0 auto;
+  margin-bottom: 85px;
   padding-top: 65px;
   padding-bottom: 102px;
 
@@ -1097,7 +1116,7 @@ h3 ~ .popular-products-old-price {
 }
 
 .main-slider .title {
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1113,10 +1132,12 @@ h3 ~ .popular-products-old-price {
   width: 240px;
   box-sizing: border-box;
 
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  text-align: left;
 
   border: none;
   background-color: #32425c;
@@ -1167,7 +1188,7 @@ h3 ~ .popular-products-old-price {
 }
 
 .main-slider-1 {
- /* display: none;*/
+  /*display: none;*/
 }
 
 .main-slider-2 {
@@ -1181,7 +1202,7 @@ h3 ~ .popular-products-old-price {
 .main-slider-1::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
 
   width: 468px;
@@ -1480,7 +1501,7 @@ h3 ~ .popular-products-old-price {
 }
 
 .featuers-list {
-  padding-bottom: 53px;
+  margin-bottom: 53px;
 }
 
 .featuers-list .featuers-item  {
@@ -2050,7 +2071,7 @@ h3 ~ .popular-products-old-price {
 
 .popup-basket {
   position: fixed;
-  /*display: none;*/
+  display: none;
   top: 410px;
   left: 50%;
 
