@@ -162,7 +162,7 @@ input[type="search"]::placeholder {
   padding-right: 28px;
 }
 
-.bookmark span {
+.bookmark .bookmark-icon{
   position: absolute;
   top: 50%;
   left: 17px;
@@ -188,7 +188,7 @@ input[type="search"]::placeholder {
   padding-right: 30px;
 }
 
-.basket span {
+.basket .basket-icon {
   position: absolute;
   top: 50%;
   left: 17px;
@@ -2226,3 +2226,17 @@ h3 ~ .popular-products-old-price {
 
   box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
 }
+
+            /*js*/
+.show {
+  display: block;
+}
+
+.background-basket {
+  background-color: #ee3643;
+}
+
+.background-bookmark {
+  background-color: #ee3643;
+}
+

@@ -38,8 +38,8 @@
           </li>
           <li>
             <a class="bookmark" href="#">
-              Закладки: 0
-              <span>
+              Закладки: <span class="bookmark-count">0</span>
+              <span class="bookmark-icon">
                 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
                   <path fill="#E72C2D" d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
@@ -50,8 +50,8 @@
           </li>
           <li>
             <a class="basket" href="#">
-              Корзина: 0
-              <span>
+              Корзина: <span class="basket-count">0</span> 
+              <span class="basket-icon">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	              width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
                 <g>
@@ -714,15 +714,17 @@
       </div>
     </section>
   </footer>
+
+  <section class="modal popup-basket">
+    <span class="message">Товар добавлен в корзину!</span>
+    <div class="popup-basket-buttons">
+      <button class="button basket-button issue" type="button">Оформить заказ</button>
+    <button class="button basket-button contune" type="button">Продолжить покупки</button>
+    </div>
+    <button class="button-modal-close"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+
+  <script src="/js/script.js"></script>
 </body>
 </html>
-
-<section class="modal popup-basket">
-  <span class="message">Товар добавлен в корзину!</span>
-  <div class="popup-basket-buttons">
-    <button class="button basket-button issue" type="button">Оформить заказ</button>
-  <button class="button basket-button contune" type="button">Продолжить покупки</button>
-  </div>
-  <button class="button-modal-close"><span class="visually-hidden">Закрыть</span></button>
-</section>
 
