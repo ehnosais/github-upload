@@ -579,6 +579,7 @@ input[type="search"]::placeholder {
 
 .header-slider-1 {
   display: none;
+  
   background-image: 
     url("../img/slider-1-top.png"),
     url("../img/slider1-back.jpg");
@@ -587,7 +588,7 @@ input[type="search"]::placeholder {
 }
 
 .header-slider-2 {
-  /*display: none;*/
+  display: none;
   
   background-image:
     url("../img/slider-2-top.png"),
@@ -2219,7 +2220,7 @@ h3 ~ .popular-products-old-price {
 .modal-map {
   position: absolute;
   top: -50px;
-  left: 10px;
+  left: 9px;
   display: none;
   width: 940px;
   height: 446px;
@@ -2239,4 +2240,11 @@ h3 ~ .popular-products-old-price {
 .background-bookmark {
   background-color: #ee3643;
 }
+
+.active {
+  display: block;
+}
+
+
+
 
