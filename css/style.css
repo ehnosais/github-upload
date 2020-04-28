@@ -2228,6 +2228,22 @@ h3 ~ .popular-products-old-price {
   box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
 }
 
+.modal-map p {
+  position: absolute;
+  margin: 0;
+  z-index: 1;
+}
+
+.modal-map iframe {
+  position: absolute;
+  z-index: 2;
+}
+
+.modal-map .button-modal-close {
+  z-index: 3;
+}
+
+
             /*js*/
 .show {
   display: block;
