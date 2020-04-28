@@ -2240,7 +2240,9 @@ h3 ~ .popular-products-old-price {
 }
 
 .modal-map .button-modal-close {
+  padding: 20px;
   z-index: 3;
+  /* outline: none; */
 }
 
 
